@@ -1,0 +1,5 @@
+numpy
+pandas
+pydeseq2
+gseapy
+lxml
