@@ -1,24 +1,27 @@
 # The fibrosis progression study
 
 ## Introduction
-This repo aims to run the analysis following the paper [Hepatic expression profiling identifies steatosis-independent and steatosis- driven advanced fibrosis genes](https://insight.jci.org/articles/view/120274). In the paper, the authors performed RNA sequencing on liver biopsies of patients with different fibrosis stages, from both infection with hepatitis C virus (HCV) or non-alcholic fatty liver disease patients. For simplicity and specificity, I will mainly focus on fatty liver disease. Therefore, the main goal of this analysis is the follwoing:  
+This repo aims to run the analysis following the paper [Hepatic expression profiling identifies steatosis-independent and steatosis- driven advanced fibrosis genes](https://insight.jci.org/articles/view/120274). In this paper, the authors performed RNA sequencing on liver biopsies of patients with different fibrosis stages, from both infection with hepatitis C virus (HCV) or non-alcholic fatty liver disease patients. For the purpose of this analysis, the focus will be primarily on NAFLD. The main objectives of this analysis are:
 
-* Compare results with what's in the paper and check if the fibrosis progression is significantly different between fatty liver disease patients only (this repo) and both HCV and fatty liver disease patients (the paper).
-* Check if the analysis can be purely run in Python, as Python has been gaining it popularity in the bioinformatics field. The paper uses mainly R packages.
-* Check if updates in functional databases, such as KEGG or GO, would results in any new findings in enrichment analysis.
+  * **Evaluate the feasibility of conducting the analysis exclusively in Python**: The original paper predominantly utilizes R packages. Given Python's increasing popularity in data analytics and its growing traction in the bioinformatics field, this analysis will explore the viability of using Python exclusively.
+  * **Investigate the impact of updated functional databases**: Examine if new updates in databases such as KEGG or GO, compared to the 2018 versions used in the paper, yield new insights in the enrichment analysis.
+  * **Compare the results with the findings of the original paper**: Assess whether fibrosis progression is significantly different when considering only NAFLD patients (this analysis) versus both HCV and NAFLD patients (the original paper).
 
-Also as a stretch goal, the following will also be checked:
-* FDA has recently (March 14, 2024) approved the first ever treatment of adults with noncirrhotic non-alcoholic steatohepatitis (NASH) with moderate to advanced liver scarring (fibrosis), to be used along with diet and exercise: Rezdiffra. Rezdiffra is a partial agonist of THR‑β, which is the major form of THR in the liver, and stimulation of THR‑β in the liver reduces intrahepatic triglycerides. Therefore, I'd like to check if any of the THR‑β related pathways is signaled from the data.
-* Check if the result of the study can provide other insights in any other potential drug target.
+
+Additionally, the following stretch goals will be investigated:
+
+   * **Examine the influence of recent FDA-approved treatments**: On March 14, 2024, the FDA approved Rezdiffra, the first treatment for noncirrhotic non-alcoholic steatohepatitis (NASH) with moderate to advanced liver scarring (fibrosis). Rezdiffra is a partial agonist of THR-β, which is the predominant form of THR in the liver, and stimulation of THR-β in the liver reduces intrahepatic triglycerides. This analysis will explore if any THR-β related pathways are signaled in the data.
+   * **Identify potential new drug targets**: Evaluate if the results of this study provide insights into other potential drug targets for fibrosis progression in NAFLD patients.
 
 ## Dataset
-The raw and processed data from the paper is available at ArrayExpress (https://www.ebi.ac.uk/arrayexpress/) under accession E-MTAB-6863. Download the datasets to the datasets folder to run the analysi.
+The raw and processed data from the paper is available at [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/) under accession number E-MTAB-6863. Download the datasets to the `datasets` folder to run the analysis.
 
 ## Project Setup
   * First Clone the repository.
   * Create the virtual environment for the project. 
   ```sh
   $ conda create -n myenv python=3.10
+  $ conda activate myenv
   ```
   * Install the required packages using requirements.txt inside the environemnt using pip.
   ```sh
