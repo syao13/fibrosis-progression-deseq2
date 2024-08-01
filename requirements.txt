@@ -4,3 +4,4 @@ seaborn
 pydeseq2
 gseapy
 lxml
+networkx
