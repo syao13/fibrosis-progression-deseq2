@@ -1,4 +1,4 @@
-# The fibrosis progression study
+# The Fibrosis Progression Study
 
 ## Introduction
 This repo aims to run the analysis following the paper [Hepatic expression profiling identifies steatosis-independent and steatosis- driven advanced fibrosis genes](https://insight.jci.org/articles/view/120274). In this paper, the authors performed RNA sequencing on liver biopsies of patients with different fibrosis stages, from both infection with hepatitis C virus (HCV) or non-alcholic fatty liver disease patients. For the purpose of this analysis, the focus will be primarily on NAFLD. The main objectives of this analysis are:
@@ -27,4 +27,4 @@ The raw and processed data from the paper is available at [ArrayExpress](https:/
   ```sh
   $ pip install -r requirements.txt
   ```
-  * run the notebooks in order.
+  * Run the notebooks in order.
