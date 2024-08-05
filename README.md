@@ -1,10 +1,10 @@
 # The Fibrosis Progression Study
 
 ## Introduction
-This repo aims to run the analysis following the paper [Hepatic expression profiling identifies steatosis-independent and steatosis- driven advanced fibrosis genes](https://insight.jci.org/articles/view/120274). In this paper, the authors performed RNA sequencing on liver biopsies of patients with different fibrosis stages, from both infection with hepatitis C virus (HCV) or non-alcholic fatty liver disease patients. For the purpose of this analysis, the focus will be primarily on NAFLD. The main objectives of this analysis are:
+This repo aims to run the analysis following the paper [Hepatic expression profiling identifies steatosis-independent and steatosis- driven advanced fibrosis genes](https://insight.jci.org/articles/view/120274). In this paper, the authors performed RNA sequencing on liver biopsies of patients with different fibrosis stages, from both infection with hepatitis C virus (HCV) or non-alcholic fatty liver disease (NAFLD) patients. For the purpose of this analysis, the focus will be primarily on NAFLD. The main objectives of this analysis are:
 
-  * **Evaluate the feasibility of conducting the analysis exclusively in Python**: The original paper predominantly utilizes R packages. Given Python's increasing popularity in data analytics for production pipelines as well as in the bioinformatics field, this analysis will explore the viability of using Python exclusively.
-  * **Investigate the impact of updated functional databases**: Examine if new updates in databases such as KEGG or GO, compared to the 2018 versions used in the paper, yield new insights in the enrichment analysis.
+  * **Evaluate the feasibility of conducting the analysis exclusively in Python**: The original paper predominantly utilizes R packages. Given Python's increasing popularity in data analytics and production pipelines as well as in the bioinformatics field, this analysis will explore the viability of using Python exclusively.
+  * **Investigate the impact of updated functional databases**: Examine if new updates in databases such as KEGG or GO, compared to the pre-2018 versions used in the paper, yield new insights in the enrichment analysis.
   * **Compare the fatty liver results with the findings of the original paper**: Assess whether fibrosis progression is significantly different when considering only NAFLD patients (this analysis) versus both HCV and NAFLD patients (the original paper).
 
 
