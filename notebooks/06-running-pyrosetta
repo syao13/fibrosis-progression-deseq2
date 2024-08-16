@@ -1,0 +1,126 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "7d4a1e42-9116-412d-ba02-c01b3d920efa",
+   "metadata": {},
+   "source": [
+    "Coming soon...\n",
+    "\n",
+    "This main objective of this notebook is try to to run with PyRosetta. I will select one of the pathway or one protein from previous, and try to run some machine learnig or protein language models."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "3e088921-7bac-41e2-83eb-418261acfea8",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Collecting pyrosetta-installer\n",
+      "  Downloading pyrosetta_installer-0.1.1-py3-none-any.whl.metadata (1.6 kB)\n",
+      "Downloading pyrosetta_installer-0.1.1-py3-none-any.whl (3.9 kB)\n",
+      "Installing collected packages: pyrosetta-installer\n",
+      "Successfully installed pyrosetta-installer-0.1.1\n",
+      "Installing PyRosetta:\n",
+      " os: mac\n",
+      " type: Release\n",
+      " Rosetta C++ extras: \n",
+      " mirror: https://west.rosettacommons.org/pyrosetta/release/release\n",
+      " extra packages: numpy\n",
+      "\n",
+      "PyRosetta wheel url: https://:@west.rosettacommons.org/pyrosetta/release/release/PyRosetta4.Release.python310.mac.wheel/pyrosetta-2024.19+release.a34b73c40f-cp310-cp310-macosx_12_0_x86_64.whl\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "\u001b[31mERROR: pyrosetta-2024.19+release.a34b73c40f-cp310-cp310-macosx_12_0_x86_64.whl is not a supported wheel on this platform.\u001b[0m\u001b[31m\n",
+      "\u001b[0m"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Attempt to install wheel failed, falling back to use `setup.py` package...\n",
+      "Downloading https://west.rosettacommons.org/pyrosetta/release/release/PyRosetta4.Release.python310.mac//PyRosetta4.Release.python310.mac.release-381.tar.bz2 into /var/folders/tv/6rtfy28j7r7fynsd3q3ks02r0000gn/T/PyRosetta4.Release.python310.mac.hi1nzwm6\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n",
+      "                                 Dload  Upload   Total   Spent    Left  Speed\n",
+      "100 1132M  100 1132M    0     0  3831k      0  0:05:02  0:05:02 --:--:-- 3556k\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Processing /private/var/folders/tv/6rtfy28j7r7fynsd3q3ks02r0000gn/T/PyRosetta4.Release.python310.mac.hi1nzwm6/PyRosetta4.Release.python310.mac.release-381/setup\n",
+      "  Preparing metadata (setup.py): started\n",
+      "  Preparing metadata (setup.py): finished with status 'done'\n",
+      "Building wheels for collected packages: pyrosetta\n",
+      "  Building wheel for pyrosetta (setup.py): started\n",
+      "  Building wheel for pyrosetta (setup.py): still running...\n",
+      "  Building wheel for pyrosetta (setup.py): still running...\n",
+      "  Building wheel for pyrosetta (setup.py): still running...\n",
+      "  Building wheel for pyrosetta (setup.py): still running...\n",
+      "  Building wheel for pyrosetta (setup.py): finished with status 'done'\n",
+      "  Created wheel for pyrosetta: filename=pyrosetta-2024.19+release.a34b73c40f-cp310-cp310-macosx_12_0_x86_64.whl size=1287900318 sha256=afa2343bde34cbf6c25e1de9e3ff242e998ce144b12986260f3f42e1eb8b30bb\n",
+      "  Stored in directory: /private/var/folders/tv/6rtfy28j7r7fynsd3q3ks02r0000gn/T/pip-ephem-wheel-cache-3tb09eqw/wheels/9f/f2/2a/f5638ead2e04ea8ae9ab69ce33b45b824ad895c0f8a54abac8\n",
+      "Successfully built pyrosetta\n",
+      "Installing collected packages: pyrosetta\n",
+      "Successfully installed pyrosetta-2024.19+release.a34b73c40f\n",
+      "Requirement already satisfied: numpy in /opt/anaconda3/envs/compbio/lib/python3.10/site-packages (2.0.1)\n"
+     ]
+    }
+   ],
+   "source": [
+    "# !pip install pyrosetta-installer \n",
+    "# import pyrosetta_installer; pyrosetta_installer.install_pyrosetta()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "01cf0a6e-ba61-4279-8ea9-16ac5ff538b3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pyrosetta\n",
+    "pyrosetta.init()"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.14"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
